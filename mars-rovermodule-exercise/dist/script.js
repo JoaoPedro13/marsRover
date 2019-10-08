@@ -251,11 +251,12 @@ function showGridCompact(){for(let i=0; i<map.length; i++ ){
 
 function showGridCompact(){
     for(let i=0; i<map.length; i++ ){
-  //for ( j=0 ; j<map.length; j++ ){ 
-  //console.log(`${map[i][j]} `);
-      console.log(`${map[i][0]} ${map[i][1]} ${map[i][2]} ${map[i][3]} ${map[i][4]} ${map[i][5]} ${map[i][6]} ${map[i][7]} ${map[i][8]} ${map[i][9]}`); 
+     let line = "";
+     for ( j=0 ; j<map.length; j++ ){ 
+       line = line + map[i][j].toString()+" "
+
+     }
+     console.log(line)    
     }
-//    console.log(`${map[i][j]} `);
-//  }
 }
 showGridCompact();
